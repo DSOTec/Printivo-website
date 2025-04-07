@@ -56,22 +56,19 @@ const App = () => {
    <Categories img={categories2} text="Stickers" secondtext="STARTING AT" price="₦5,400" per="per 75" button="Browse Stickers >" />
    </div>
   <Brandinfo />
-  <div className='bg-[#EDF6FD] h-[75vh]'>
-  <h2 className='pl-[4%] pt-[2%] font-[600] font-serif text-[2.5rem]  '>What Customers Say About Us 🙌🏾</h2>
-  <div className='grid grid-cols-1 sm:grid grid-cols-2 md:grid grid-cols-3 lg:grid grid-cols-4 pl-[6%] pr-[3%] sm:block m-1 gap-10 '>
+  <div className='bg-[#EDF6FD] h-[70vh]'>
+  <h2 className='pl-[4%] pt-[3%] mb-5 font-[500] font-serif text-[1.5rem]'>What Customers Say About Us 🙌🏾</h2>
+  <div className='grid grid-cols-1 sm:grid grid-cols-2 md:grid grid-cols-2 lg:grid grid-cols-3 pl-[2%] pr-[3%] sm:block m-1 gap-2 '>
   <Customerreview logo={logo} name="Amina Ebele" username="@DeliciousAmina" text="I am now the unofficial @Printivo ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!" />
   <Customerreview logo={logo} name="Oluwatosin" username="@tosingirlfx" text="@Printivo delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come." />
   <Customerreview logo={logo} name="Oluwatosin" username="@olgablark" text="These guys @Printivo are really awesome and affordable. Excellent customer service and delivery too. Thank you." />
   </div>
   </div>
+  
+  
   <Routes>
     <Route path="/" element={<Header />} />
     <Route path="/products" element={<Products />} />
-    <Route path="/categories" element={<Categories />} />
-    <Route path="/news" element={<News />} />
-    <Route path="/productinfo" element={<Productinfo />} />
-    <Route path="/list" element={<List />} />
-    <Route path="/categoriesinfo" element={<Categoriesinfo />} />
   </Routes>
 
    </>

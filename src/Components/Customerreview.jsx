@@ -3,7 +3,7 @@ import React from 'react'
 const Customerreview = (props) => {
   return (
     <>
-   <div className="card bg-white shadow-md rounded-lg p-5 w-full max-w-sm m-10">
+   <div className="card bg-white shadow-md rounded-lg p-5 w-full max-w-sm m-5">
   <div className="flex items-center gap-4 mb-3">
     <img src={props.logo} alt="logo" className="w-10 h-10 border border-[#FFDEEE] p-2 rounded-full" />
     <div>
