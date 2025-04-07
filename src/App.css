@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.bannerstyle{
+   background-image: url("assets/banner.png");
+   background-color: #ECE8D9 ;
+   background-repeat: no-repeat;
+   background-size: 35%;
+   background-position: 820px 150px ;
+   height: 80vh;
+}
