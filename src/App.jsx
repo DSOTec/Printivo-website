@@ -20,10 +20,13 @@ import tenone from './assets/tenone.png'
 import tentwo from './assets/tentwo.jpeg'
 
 import List from './Components/List.jsx'
-import Categoriesinfo from './Components/Categories.jsx'
+import Categoriesinfo  from './Components/Categoriesinfo.jsx';
 import Categories from './Components/Categories.jsx'
 import categories1 from './assets/categories1.png'
 import categories2 from './assets/categories2.png'
+import Brandinfo from './Components/Brandinfo.jsx';
+import Customerreview from './Components/Customerreview.jsx';
+import logo from './assets/download.svg'
 const App = () => {
   return (
    <>
@@ -45,15 +48,22 @@ const App = () => {
    <Products img={tenone} text="A4 Branded Paper Bag" secondtext="STARTING AT" price="₦115,280" per="per 100" button="Browse A4 Branded P... >" />
    <Products img={tentwo} text="A4 Courier Bags" secondtext="STARTING AT" price="₦27,500" per="per 100" button="Browse A4 Courier B... >" />
    </div>
+   <div>
    <Categoriesinfo /> 
-   <div className=" grid grid-cols-4">
+   </div>
+   <div className='block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-4 pl-[4%] pr-[3%] sm-block '>
    <Categories img={categories1} text="Greeting Cards" secondtext="STARTING AT" price="₦29,800" per="per 50" button="Browse Greeting Car... >" />
    <Categories img={categories2} text="Stickers" secondtext="STARTING AT" price="₦5,400" per="per 75" button="Browse Stickers >" />
    </div>
-    
-  
-  <List />
-
+  <Brandinfo />
+  <div className='bg-[#EDF6FD] h-[75vh]'>
+  <h2 className='pl-[4%] pt-[2%] font-[600] font-serif text-[2.5rem]  '>What Customers Say About Us 🙌🏾</h2>
+  <div className='grid grid-cols-1 sm:grid grid-cols-2 md:grid grid-cols-3 lg:grid grid-cols-4 pl-[6%] pr-[3%] sm:block m-1 gap-10 '>
+  <Customerreview logo={logo} name="Amina Ebele" username="@DeliciousAmina" text="I am now the unofficial @Printivo ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!" />
+  <Customerreview logo={logo} name="Oluwatosin" username="@tosingirlfx" text="@Printivo delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come." />
+  <Customerreview logo={logo} name="Oluwatosin" username="@olgablark" text="These guys @Printivo are really awesome and affordable. Excellent customer service and delivery too. Thank you." />
+  </div>
+  </div>
   <Routes>
     <Route path="/" element={<Header />} />
     <Route path="/products" element={<Products />} />

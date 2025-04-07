@@ -5,7 +5,7 @@ import nigeriaflag from '../assets/nigeriaflag.svg'
 const Header = () => {
   return (
     <>
-   <div className="bg-[#F7F6F4] px-[4%] py-2">
+   <div className="bg-[#F7F6F4] px-[4%] py-2 pt-5 pb-5">
   <div className="flex flex-col md:flex-row justify-between items-center text-sm text-[#506683] font-semibold gap-4">
     <ul className="flex flex-wrap justify-center md:justify-start gap-6">
       <li>Cost Calculator</li>
@@ -24,7 +24,7 @@ const Header = () => {
         <img src={whatsapp} alt="WhatsApp logo" className="w-6 h-6" />
       </li>
 
-      <li className="flex items-center gap-2">
+      <li className="flex items-center gap-2 border-[1px] bordrer-[solid] rounded-[60px] p-[10px] cursor-pointer hover:bg-[#000] hover:text-[#fff] transition-all duration-200">
         <img src={nigeriaflag} alt="Nigeria Flag" className="w-5 h-5" />
         <p>Nigeria</p>
       </li>
