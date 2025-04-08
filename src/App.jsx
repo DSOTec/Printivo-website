@@ -31,6 +31,12 @@ import fast from './assets/Fast.svg'
 import TOP from './assets/TOP.svg'
 import AFS from './assets/AFSsvg.svg'
 import Brands from './Components/Brands.jsx'
+import techcrunch from './assets/Techcrunch.svg'
+import forbes from './assets/forbes.svg'
+import techpoint from './assets/Techpoint_Logo_ucyvgg.png'
+import techcabal from './assets/TechCabalsvg.svg'
+import cnn from './assets/CNN.svg'
+import Footer from './Components/Footer.jsx';
 const App = () => {
   return (
    <>
@@ -68,15 +74,26 @@ const App = () => {
   <Customerreview logo={logo} name="Oluwatosin" username="@olgablark" text="These guys @Printivo are really awesome and affordable. Excellent customer service and delivery too. Thank you." />
   </div>
   </div>
-  <div className='p-[4%] px-[4%]'>
-  <h2 className='pl-[4%] pt-[3%] mb-5 font-[600] font-serif text-[1.5rem] text-[#384A62]'>You can count on us for:</h2>
+  <div className='pl-[4%] pt-[4%] px-[4%] mb-4'>
+  <h2 className='pl-[4%] pt-[3%] mb-5 font-[600] font-serif text-[1.6rem] text-[#384A62]'>You can count on us for:</h2>
   <div className="block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-3 pl-[4%] pr-[3%] sm-block">
   <Counton img={fast} title="Fast Turnaround Within Days" content="Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct." />
   <Counton img={TOP} title="100% Top Quality" content="Only the finest materials, machines and people will be involved in fulfilling your order." />
   <Counton img={AFS} title="Affordable Services" content="All products are adequately priced to ensure you get value for your money at all times." />
   </div>
   </div>
-  <Brands />
+
+  <div className='pl-[3%] pt-[4%] px-[4%] mb-10'>
+  <h2 className='pl-[4%] pt-[3%] pb-6 mb-5 font-[600] font-serif text-[1.6rem] text-[#384A62] '>Our amazing work got noticed by:</h2>
+  <div className='block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-5 pl-[4%] pr-[3%] sm-block gap-10'>
+  <Brands img={techcrunch} link="Read the article here"  />
+  <Brands img={forbes} link="Read the article here"   />
+  <Brands img={techpoint} link="Read the article here"   />
+  <Brands img={techcabal} link="Read the article here"   />
+  <Brands img={cnn} link="Read the article here"  />
+  </div>
+  </div>
+  <Footer />
   <Routes>
     <Route path="/" element="" />
     <Route path="/products" element="" />
