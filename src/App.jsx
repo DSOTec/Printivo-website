@@ -18,7 +18,6 @@ import nine from './assets/ninecard.png'
 import ten from './assets/tencard.png'
 import tenone from './assets/tenone.png'
 import tentwo from './assets/tentwo.jpeg'
-
 import List from './Components/List.jsx'
 import Categoriesinfo  from './Components/Categoriesinfo.jsx';
 import Categories from './Components/Categories.jsx'
@@ -27,6 +26,8 @@ import categories2 from './assets/categories2.png'
 import Brandinfo from './Components/Brandinfo.jsx';
 import Customerreview from './Components/Customerreview.jsx';
 import logo from './assets/download.svg'
+import Counton from './Components/Counton.jsx'
+import fast from './assets/Fast.svg'
 const App = () => {
   return (
    <>
@@ -57,18 +58,18 @@ const App = () => {
    </div>
   <Brandinfo />
   <div className='bg-[#EDF6FD] h-[70vh]'>
-  <h2 className='pl-[4%] pt-[3%] mb-5 font-[500] font-serif text-[1.5rem]'>What Customers Say About Us 🙌🏾</h2>
+  <h2 className='pl-[4%] pt-[3%] mb-5 font-[500] font-serif text-[1.5rem] text-[#384A62]'>What Customers Say About Us 🙌🏾</h2>
   <div className='grid grid-cols-1 sm:grid grid-cols-2 md:grid grid-cols-2 lg:grid grid-cols-3 pl-[2%] pr-[3%] sm:block m-1 gap-2 '>
   <Customerreview logo={logo} name="Amina Ebele" username="@DeliciousAmina" text="I am now the unofficial @Printivo ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!" />
   <Customerreview logo={logo} name="Oluwatosin" username="@tosingirlfx" text="@Printivo delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come." />
   <Customerreview logo={logo} name="Oluwatosin" username="@olgablark" text="These guys @Printivo are really awesome and affordable. Excellent customer service and delivery too. Thank you." />
   </div>
   </div>
-  
+  <Counton img={fast} title="Fast Turnaround Within Days" content="Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct." />
   
   <Routes>
-    <Route path="/" element={<Header />} />
-    <Route path="/products" element={<Products />} />
+    <Route path="/" element="" />
+    <Route path="/products" element="" />
   </Routes>
 
    </>
