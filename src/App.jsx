@@ -66,6 +66,8 @@ const App = () => {
   </div>
   </div>
   <Counton img={fast} title="Fast Turnaround Within Days" content="Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct." />
+  <Counton img={TOP} title="100% Top Quality" content="Only the finest materials, machines and people will be involved in fulfilling your order." />
+  <Counton img={AFS} title="Affordable Services" content="All products are adequately priced to ensure you get value for your money at all times." />
   
   <Routes>
     <Route path="/" element="" />
