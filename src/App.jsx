@@ -28,6 +28,9 @@ import Customerreview from './Components/Customerreview.jsx';
 import logo from './assets/download.svg'
 import Counton from './Components/Counton.jsx'
 import fast from './assets/Fast.svg'
+import TOP from './assets/TOP.svg'
+import AFS from './assets/AFSsvg.svg'
+import Brands from './Components/Brands.jsx'
 const App = () => {
   return (
    <>
@@ -57,18 +60,23 @@ const App = () => {
    <Categories img={categories2} text="Stickers" secondtext="STARTING AT" price="₦5,400" per="per 75" button="Browse Stickers >" />
    </div>
   <Brandinfo />
-  <div className='bg-[#EDF6FD] h-[70vh]'>
+  <div className='bg-[#EDF6FD] h-[120vh] md:h-[70vh] '>
   <h2 className='pl-[4%] pt-[3%] mb-5 font-[500] font-serif text-[1.5rem] text-[#384A62]'>What Customers Say About Us 🙌🏾</h2>
-  <div className='grid grid-cols-1 sm:grid grid-cols-2 md:grid grid-cols-2 lg:grid grid-cols-3 pl-[2%] pr-[3%] sm:block m-1 gap-2 '>
+  <div className='block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-3 pl-[4%] pr-[3%] sm-block '>
   <Customerreview logo={logo} name="Amina Ebele" username="@DeliciousAmina" text="I am now the unofficial @Printivo ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!" />
   <Customerreview logo={logo} name="Oluwatosin" username="@tosingirlfx" text="@Printivo delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come." />
   <Customerreview logo={logo} name="Oluwatosin" username="@olgablark" text="These guys @Printivo are really awesome and affordable. Excellent customer service and delivery too. Thank you." />
   </div>
   </div>
+  <div className='p-[4%] px-[4%]'>
+  <h2 className='pl-[4%] pt-[3%] mb-5 font-[600] font-serif text-[1.5rem] text-[#384A62]'>You can count on us for:</h2>
+  <div className="block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-3 pl-[4%] pr-[3%] sm-block">
   <Counton img={fast} title="Fast Turnaround Within Days" content="Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct." />
   <Counton img={TOP} title="100% Top Quality" content="Only the finest materials, machines and people will be involved in fulfilling your order." />
   <Counton img={AFS} title="Affordable Services" content="All products are adequately priced to ensure you get value for your money at all times." />
-  
+  </div>
+  </div>
+  <Brands />
   <Routes>
     <Route path="/" element="" />
     <Route path="/products" element="" />
