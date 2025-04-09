@@ -3,7 +3,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Header from './Components/Header.jsx'
 import Banner from './Components/Banner.jsx'
-import News from './Components/news.jsx'
+import News from './Components/News.jsx'
 import Productinfo from './Components/Productinfo.jsx'
 import Products from './Components/Products.jsx'
 import one from './assets/onecard.png'
