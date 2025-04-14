@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/logo.svg'
 import cart from '../assets/cart.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Outlet, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import  '../App.css'
 
 const Banner = () => {
@@ -16,7 +16,7 @@ const Banner = () => {
 
       <ul className="flex flex-wrap justify-center lg:justify-end items-center gap-4 text-sm font-bold">
         <li className="text-[#4B6382] hover:text-[#D98E8D] transition">
-          <Link to="/products">All Products</Link>
+          <Link to="/Allproducts">All Products</Link>
         </li>
         <li className="text-[#4B6382]">Become a Reseller</li>
         <li className="text-[#4B6382]">Merch Store</li>
