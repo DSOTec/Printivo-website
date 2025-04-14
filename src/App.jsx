@@ -38,6 +38,7 @@ import techcabal from './assets/TechCabalsvg.svg'
 import cnn from './assets/CNN.svg'
 import Footer from './Components/Footer.jsx';
 import Allproducts from './Pages/Allproducts.jsx';
+import Reseller from './Pages/Reseller.jsx';
 const App = () => {
   return (
    <>
@@ -95,6 +96,7 @@ const App = () => {
         } />
         {/* All Products route */}
         <Route path="/Allproducts" element={<Allproducts />} />
+        <Route path="/Reseller" element={<Reseller />} />
       </Routes>
   <div className='pl-[4%] pt-[4%] px-[4%] mb-10'>
   <h2 className='pl-[4%] pt-[3%] mb-5 font-[600] font-serif text-[1.6rem] text-[#384A62]'>You can count on us for:</h2>

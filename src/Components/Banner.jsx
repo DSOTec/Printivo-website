@@ -18,11 +18,11 @@ const Banner = () => {
         <li className="text-[#4B6382] hover:text-[#D98E8D] transition">
           <Link to="/Allproducts">All Products</Link>
         </li>
-        <li className="text-[#4B6382]">Become a Reseller</li>
-        <li className="text-[#4B6382]">Merch Store</li>
-        <li className="text-[#4B6382]">Marketplace</li>
-        <li className="text-[#D98E8D]">Sign In</li>
-        <li className="text-[#4B6382]">Create Account</li>
+        <li className="text-[#4B6382] hover:text-[#D98E8D] transition"><Link to="/Reseller"> Become a Reseller </Link></li>
+        <li className="text-[#4B6382] hover:text-[#D98E8D] transition">Merch Store</li>
+        <li className="text-[#4B6382] hover:text-[#D98E8D] transition">Marketplace</li>
+        <li className="text-[#D98E8D] hover:text-[#D98E8D] transition">Sign In</li>
+        <li className="text-[#4B6382] hover:text-[#D98E8D] transition">Create Account</li>
         <li>
           <img src={cart} alt="cart" className="w-6 h-6" />
         </li>
