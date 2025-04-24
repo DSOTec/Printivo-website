@@ -12,7 +12,7 @@ import dhl from '../assets/dhl.png'
 const Footer = () => {
   return (
    <>
-    <div className='bg-[#384A62]'>
+    <div className='bg-[#384A]'>
         <div className='block  text-[center] md:grid grid-cols-2 sm:grid grid-cols-4 pl-[4%] pr-[3%] pt-[4%] sm-block '>
             <div >
                 <h2 className='text-[#ECE8D9] text-[1.2rem] mb-3 font-[500]' >Printivo</h2>
